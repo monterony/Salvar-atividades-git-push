@@ -1,0 +1,192 @@
+sh-3.2$ cd
+sh-3.2$ cd /Users/jde-arau/shell00
+sh-3.2$ ls
+ex00	ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09
+sh-3.2$ git init
+Initialized empty Git repository in /Users/jde-arau/shell00/.git/
+sh-3.2$ git add .
+warning: adding embedded git repository: ex05
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint: 	git submodule add <url> ex05
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint: 	git rm --cached ex05
+hint:
+hint: See "git help submodule" for more information.
+error: 'ex06/' does not have a commit checked out
+fatal: adding files failed
+sh-3.2$ cd /Users/jde-arau/Desktop/untitled\ folder\ 2/Shell00
+sh-3.2$ ls
+ex00	ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09
+sh-3.2$ git init
+Initialized empty Git repository in /Users/jde-arau/Desktop/untitled folder 2/Shell00/.git/
+sh-3.2$ git add .
+warning: adding embedded git repository: ex05
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint: 	git submodule add <url> ex05
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint: 	git rm --cached ex05
+hint:
+hint: See "git help submodule" for more information.
+error: 'ex06/' does not have a commit checked out
+fatal: adding files failed
+sh-3.2$ cd ex05
+sh-3.2$ ls -la
+total 24
+drwxr-xr-x   5 jde-arau  2022_lisboa   170 Jan 11 18:55 .
+drwxr-xr-x  14 jde-arau  2022_lisboa   476 Jan 13 16:28 ..
+-rw-r--r--@  1 jde-arau  2022_lisboa  6148 Jan 11 18:53 .DS_Store
+drwxr-xr-x  12 jde-arau  2022_lisboa   408 Jan 11 18:43 .git
+-rw-r--r--@  1 jde-arau  2022_lisboa    24 Jan 11 18:55 git_commit.sh
+sh-3.2$ rm =r .git/
+rm: =r: No such file or directory
+rm: .git/: is a directory
+sh-3.2$ rmdir .git/
+rmdir: .git/: Directory not empty
+sh-3.2$ ls
+git_commit.sh
+sh-3.2$ ls -la
+total 24
+drwxr-xr-x   5 jde-arau  2022_lisboa   170 Jan 11 18:55 .
+drwxr-xr-x  14 jde-arau  2022_lisboa   476 Jan 13 16:28 ..
+-rw-r--r--@  1 jde-arau  2022_lisboa  6148 Jan 11 18:53 .DS_Store
+drwxr-xr-x  12 jde-arau  2022_lisboa   408 Jan 11 18:43 .git
+-rw-r--r--@  1 jde-arau  2022_lisboa    24 Jan 11 18:55 git_commit.sh
+sh-3.2$ rm =r .git/
+rm: =r: No such file or directory
+rm: .git/: is a directory
+sh-3.2$ rm =rf .git/
+rm: =rf: No such file or directory
+rm: .git/: is a directory
+sh-3.2$ rm =rf .git
+rm: =rf: No such file or directory
+rm: .git: is a directory
+sh-3.2$ ls
+git_commit.sh
+sh-3.2$ ls -la
+total 24
+drwxr-xr-x   5 jde-arau  2022_lisboa   170 Jan 11 18:55 .
+drwxr-xr-x  14 jde-arau  2022_lisboa   476 Jan 13 16:28 ..
+-rw-r--r--@  1 jde-arau  2022_lisboa  6148 Jan 11 18:53 .DS_Store
+drwxr-xr-x  12 jde-arau  2022_lisboa   408 Jan 11 18:43 .git
+-rw-r--r--@  1 jde-arau  2022_lisboa    24 Jan 11 18:55 git_commit.sh
+sh-3.2$ clear
+sh-3.2$ ls -la
+total 24
+drwxr-xr-x   5 jde-arau  2022_lisboa   170 Jan 11 18:55 .
+drwxr-xr-x  14 jde-arau  2022_lisboa   476 Jan 13 16:28 ..
+-rw-r--r--@  1 jde-arau  2022_lisboa  6148 Jan 11 18:53 .DS_Store
+drwxr-xr-x  12 jde-arau  2022_lisboa   408 Jan 11 18:43 .git
+-rw-r--r--@  1 jde-arau  2022_lisboa    24 Jan 11 18:55 git_commit.sh
+sh-3.2$ rm -fr .git
+sh-3.2$ ls -la
+total 24
+drwxr-xr-x   4 jde-arau  2022_lisboa   136 Jan 13 16:31 .
+drwxr-xr-x  14 jde-arau  2022_lisboa   476 Jan 13 16:28 ..
+-rw-r--r--@  1 jde-arau  2022_lisboa  6148 Jan 11 18:53 .DS_Store
+-rw-r--r--@  1 jde-arau  2022_lisboa    24 Jan 11 18:55 git_commit.sh
+sh-3.2$ cd ..
+sh-3.2$ ls
+ex00	ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09
+sh-3.2$ cd ex05
+sh-3.2$ ls
+git_commit.sh
+sh-3.2$ cd ..
+sh-3.2$ ls
+ex00	ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09
+sh-3.2$ git init
+Reinitialized existing Git repository in /Users/jde-arau/Desktop/untitled folder 2/Shell00/.git/
+sh-3.2$ git add .
+error: 'ex06/' does not have a commit checked out
+fatal: adding files failed
+sh-3.2$ cd /Users/jde-arau/Desktop/untitled\ folder\ 3
+sh-3.2$ mkdir ex00 ex01 ex02 ex03 ex04 ex05 ex06 ex07 ex08 ex09
+sh-3.2$ cd /Users/jde-arau/Desktop/untitled\ folder\ 3
+sh-3.2$ ls
+ex00	ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09
+sh-3.2$ git init
+Initialized empty Git repository in /Users/jde-arau/Desktop/untitled folder 3/.git/
+sh-3.2$ git add .
+sh-3.2$ git commit -m "terminei porra"
+[master (root-commit) e50f32e] terminei porra
+ Committer: Jonas De araujo santos neto <jde-arau@c1r1s6.42lisboa.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 21 files changed, 18 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 ex00/.DS_Store
+ create mode 100644 ex00/Z
+ create mode 100644 ex01/.DS_Store
+ create mode 100644 ex01/testShell00.tar
+ create mode 100644 ex02/.DS_Store
+ create mode 100644 ex02/exo2.tar
+ create mode 100644 ex03/.DS_Store
+ create mode 100644 ex03/id_rsa_pub
+ create mode 100644 ex04/.DS_Store
+ create mode 100644 ex04/midLS
+ create mode 100644 ex05/.DS_Store
+ create mode 100644 ex05/git_commit.sh
+ create mode 100644 ex06/.DS_Store
+ create mode 100644 ex06/git_ignore.sh
+ create mode 100644 ex07/.DS_Store
+ create mode 100644 ex07/b
+ create mode 100644 ex08/.DS_Store
+ create mode 100755 ex08/clean
+ create mode 100644 ex09/.DS_Store
+ create mode 100644 ex09/ft_magic
+sh-3.2$ git remote add origin git@vogsphere.42lisboa.com:vogsphere/intra-uuid-67e5e85f-11bd-4711-903d-e60de4054b5f-3944279-jde-arau
+sh-3.2$ git push origin master
+The authenticity of host 'vogsphere.42lisboa.com (10.52.0.6)' can't be established.
+ECDSA key fingerprint is SHA256:PWIrZlpXBYbeC3O3z3AAbu0ppgA+0gEjGbu03XOG7L8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'vogsphere.42lisboa.com,10.52.0.6' (ECDSA) to the list of known hosts.
+Enumerating objects: 33, done.
+Counting objects: 100% (33/33), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (28/28), done.
+Writing objects: 100% (33/33), 4.14 KiB | 4.14 MiB/s, done.
+Total 33 (delta 12), reused 0 (delta 0)
+remote: . Processing 1 references
+remote: Processed 1 references in total
+To vogsphere.42lisboa.com:vogsphere/intra-uuid-67e5e85f-11bd-4711-903d-e60de4054b5f-3944279-jde-arau
+ * [new branch]      master -> master
+sh-3.2$ cd /Users/jde-arau/Desktop/untitled\ folder\ 4
+sh-3.2$ git clone git@vogsphere.42lisboa.com:vogsphere/intra-uuid-67e5e85f-11bd-4711-903d-e60de4054b5f-3944279-jde-arau
+Cloning into 'intra-uuid-67e5e85f-11bd-4711-903d-e60de4054b5f-3944279-jde-arau'...
+remote: Enumerating objects: 33, done.
+remote: Counting objects: 100% (33/33), done.
+remote: Compressing objects: 100% (28/28), done.
+remote: Total 33 (delta 12), reused 0 (delta 0)
+Receiving objects: 100% (33/33), 4.14 KiB | 4.14 MiB/s, done.
+Resolving deltas: 100% (12/12), done.
+sh-3.2$ ls
+intra-uuid-67e5e85f-11bd-4711-903d-e60de4054b5f-3944279-jde-arau
+sh-3.2$ cd intra-uuid-67e5e85f-11bd-4711-903d-e60de4054b5f-3944279-jde-arau/
+sh-3.2$ ls
+ex00	ex01	ex02	ex03	ex04	ex05	ex06	ex07	ex08	ex09
+sh-3.2$
+sh-3.2$ 
